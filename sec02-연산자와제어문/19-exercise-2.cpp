@@ -4,5 +4,18 @@
 #include <stdio.h>
 
 int main() {
-    
+    int num;
+    printf("자연수를 입력해주세요.");
+    scanf("%d", &num);
+
+    for(int i = 1; i <= num; i++) {
+        if(num % i == 0) {
+            if(i == num) {
+                printf("%d\n", i);
+                break;
+            }
+            printf("%d,", i);
+        }
+    }
+
 }
