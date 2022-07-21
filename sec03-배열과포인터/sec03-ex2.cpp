@@ -20,19 +20,21 @@ int main() {
     scanf("%d", &i);
     scanf("%d", &j);
 
-    int arr[i][j];
+    int arr[12][12];
     for(int k =0; k < i ; k++) {
-        for(int l =0; l < j; l++){
-            scanf("%d", arr[k][l]);
+        for(int m =0; m < j; m++){
+            scanf("%d", &arr[k][m]);
         } 
     }
 
-    int sum[i];
+    int sum;
     for(int k = 0; k < i; k++) {
+        sum = 0;
+        
         for(int l = 0; l < j; l++) {
-            sum[k] += arr[k][l];
+            sum += arr[k][l];
         }
-        printf("%d\n", sum[k]);
+        printf("%d\n", sum);
     }
 
 
